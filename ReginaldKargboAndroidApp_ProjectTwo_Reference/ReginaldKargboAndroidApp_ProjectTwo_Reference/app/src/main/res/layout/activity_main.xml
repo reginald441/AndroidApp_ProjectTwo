@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inventory Tracker"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <TextView
+            android:text="Login / Create Account"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:hint="Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/createAccountButton"
+            android:text="Create Account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Inventory Data Grid"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:id="@+id/inventoryTable"
+            android:stretchColumns="*"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView android:text="Item" android:textStyle="bold" android:padding="8dp" />
+                <TextView android:text="Qty" android:textStyle="bold" android:padding="8dp" />
+                <TextView android:text="Action" android:textStyle="bold" android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Laptop" android:padding="8dp" />
+                <TextView android:text="5" android:padding="8dp" />
+                <Button android:text="Delete" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Mouse" android:padding="8dp" />
+                <TextView android:text="12" android:padding="8dp" />
+                <Button android:text="Delete" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:text="Add Inventory Item"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/itemNameInput"
+            android:hint="Item name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/itemQuantityInput"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/addItemButton"
+            android:text="Add Item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="SMS Notifications"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Allow SMS notifications for low inventory alerts and important inventory updates."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/smsPermissionButton"
+            android:text="Allow SMS Notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
